@@ -1,0 +1,149 @@
+        /*
+            What "pretty" code! How lovely!
+            *quietly in the background you hear a "ba dum TCH"*
+            *you remain unimpressed, sitting there with a look of boredom on your face.*
+        */
+        /*  */
+        /* Defines the way the background looks */
+        body {
+            margin: 0px; /* tells everything on the page to not bother with having space between it and the sides */
+            background: linear-gradient(#c0e9ff, #38f1ff); /* Puts in a gradient background */
+        }
+
+
+
+
+        /* Still never going to use this. Enable it if you choose by setting the display to table. */
+        #navigation-pane {
+            display: none;
+            align-content: left;
+            width: 150px;
+            height: 400px;
+            background: rgba(255, 255, 255, 0.92);
+            position:fixed;
+            float: right;
+        }
+
+
+        /* for some reason, #content's margin has effects on #navigation-pane, I need to fix that ._. */
+        #content {
+            background: #fff; /* tells content to have a white background */
+            width: 700px; /* gives the content a set width */
+            margin-top: 75px; /* makes it display ten pixels under the header. 75 - 65 = 10 */
+            margin-left: 30px; /* overides the body margin and makes it look less ugly */
+            height: 1200px; /* gives it a set height */
+            border: #d4d4d4 1px solid; /* gives it a grey border 1 pixel wide and completely solid */
+            border-radius: 2px; /* makes the edges curved by adding a radius */
+        }
+
+
+
+        /* formats all titles and paragraphs, define it explicitly in another section if you want it differently. */
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+            font-family:'Josefin Sans', sans-serif;
+            margin-left: 10px; /* makes the text always have a slight indent */
+        }
+
+
+        /* Creates an exception to the previous rule for header 3 */
+        h3 {
+            color: #b4b4b4; /* makes the colour of the text grey */
+            font-size: 40px;
+            display: inline;
+        }
+
+
+        /* Creates an exception to the previous rule for header 2 */
+        h2 {
+        text-align: center;
+        font-size: 50px;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+        /* Places the link to twitter */
+        .linktotwitter {
+            background-position: top right; /* makes the image a background image and puts it in the top right */
+            float: right;
+            padding: 5px;
+        }
+
+
+        /* Places the link to Youtube */
+        .linktoyoutube  {
+            background-image: url('/VersionBeta/img/youtubelink.png') right top no-repeat;
+            float: right;
+            padding: 5px;
+        }
+
+
+        /* Places the link to instagram */
+        .linktoinstagram {
+            display: none; /* not used at the moment but you can enable it if you want by using "display: inline;" */
+            background-position: top right; /* makes the image a background image and puts it in the top right */
+            float: right;
+            padding: 5px;
+        }
+
+
+        /* defines the way that the links above behave as a group */
+        #buttonsatthetoprighthandcornerofthescreen a:hover {
+            /* box-shadow: 0 0 10px #ababab; */
+        }
+
+        /* Says the way that the buttons list displays and behaves */
+        #buttons li {
+            display: table-cell;
+            text-decoration: none; /* makes sure there will be no underline or colouration on the links */
+            padding: 10px;
+        }
+
+        /* Says the way the links behave in the above list */
+        #buttons a {
+            text-align: center; /* moves text to the centre */
+            font-family: 'Josefin Sans', sans-serif;
+            display: table-cell;
+            height: 60px;
+            width: 150px;
+            line-height: 60px; /* makes the text display in the middle of the button by calculating 60 / 2 */
+            background-color: #61dbed; /* makes the background colour light blue */
+            text-decoration: none;
+            color: #fff;
+            border: #67c8e3 1px solid; /* makes the border colour blue, solid and 1 pixel thick. */
+            border-radius: 1px; /* smoothes the corners off by one pixel */
+            font-size: 25px;
+            word-wrap: nowrap;
+        }
+
+
+        /* Says the way the links behave when hovered over */
+        #buttons a:hover {
+            background-color: #65cbe0;
+            box-shadow: 0 0 -3 #747474
+        }
+
+        /* If you want to make a line, this is the thing that says how it looks. BTW, its <div id="line"></div> */
+        #line { border-bottom: #d4d4d4 1px solid; margin: 0; }
+
+        /* Optional Twitter timeline, I haven't used it yet. */
+        .twitter-timeline {
+            display: none;
+            float: right;
+            margin-top: 87px;
+            width: 30px
+        }

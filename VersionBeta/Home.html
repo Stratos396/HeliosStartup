@@ -1,13 +1,9 @@
-<!-- 
-TO DO:
-change body width to 1000px ish
-format navigation panel
-yup
-ALSO:
+<!--
+Hey, ummm... if you're inspecting the code and looking for what makes the page look like that, there's a link to the css file in the head.
+Who still even uses the style tag, anyway?
 
-STUFF TO COME.
-
-
+Use <div id="line"></div> to draw a single line
+use '<li><a href="URL" target="_blank"></a></li>' under important links to create a button.
 -->
 
 
@@ -18,35 +14,77 @@ STUFF TO COME.
     <head>
         <!-- Always import this very same head and body up to content, it's all you ever need.-->
         <link rel="icon" type="image/png" href="img/favicon.png">
-        <link rel="stylesheet" type="text/css" href="Home.css">
+        <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet-navbar.css">
+        <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet-main.css">
         <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
         <title>Robert's Homepage</title>
     </head>
 
     <!--The main content of the page!-->
     <body>
-        <div id="header-text">
-        <div id="header-main">
-            <a href="Home.html" style="text-decoration:none;"><h3>Home |</h3></a>
-            <a href="TravelBlog.html" style="text-decoration:none;"><h3>Travel Blog |</h3></a>
-            <a href="Tests.html" style="text-decoration:none;"><h3 > Testing Code |</h3></a>
-            <a href="PersonalBlog.html" style="text-decoration:none;"><h3>Personal Blog</h3></a>
+
+
+
+            <!-- Buttons for navigating to different pages -->
+            <ul id="nav">
+                <li><a class="home" href="Home.html" style="text-decoration:none;"><h3>Home</h3></a></li>
+                <li><a class="travel-blog" href="TravelBlog.html" style="text-decoration:none;"><h3>Travels</h3></a></li>
+                <li><a class="testing" href="Testing.html" style="text-decoration:none;"><h3 >Code</h3></a></li>
+                <li><a class="person-blog" href="PersonalBlog.html" style="text-decoration:none;"><h3>Blog</h3></a></li>
+                <li><a href="#" id="more" style="text-decoration: none;"><h3>More</h3></a></li>
+            </ul>
+
+
         </div>
         </div>
-        
+
+
+  <!-- IDEK why I even keep this here. Like, seriously, I'll never use it. :/ -->
         <div id="navigation-pane">
             <a href="Websites.html"><h4 id="websites">Websites</h4></a>
             <a href="OtherWebsites.html"><h4 id="other-websites">Other Websites</h4></a>
-            <a href="UpdateLog.html"><h4 id="update-log">Update Log</h4></a>    
+            <a href="UpdateLog.html"><h4 id="update-log">Update Log</h4></a>
             <a href="Notes.html"><h4 id="Notes">Notes</h4></a>
         </div>
 
-        <div id="content">
-            <h2>Header for Main Page</h2>
-            <h4>Subheading!</h3>
-            <p>Paragraph:	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
+        <!-- Enable Twitter Module
+        <a class="twitter-timeline" href="https://twitter.com/_Robert_Cooper_" data-widget-id="496185116838731776">Tweets by @_Robert_Cooper_</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        -->
 
+        <div id="content">
+
+            <h2 style="text-align: left;">Important Links</h2>
+            <h4>Sometimes you need to get at a page quickly, when you open a new tab or are for some reason too lazy to type in the URL. This section is all about the ease of access because I <u>know</u> you're lazy at heart.</h4>
+            <br>
+
+            <ul id="buttons">
+                <!-- Buttons for quick links -->
+                <li><a href="http://imgur.com/a/hfaqL">Update a Skin</a></li>
+                <li><a href="http://www.killarney-h.schools.nsw.edu.au">KHHS</a></li>
+                <li><a href="http://drive.google.com">Google Drive</a></li>    <br>
+                <li><a href="http://www.google.com/">Google</a></li>
+                <li><a href="http://www.w3schools.com/">W3 Schools</a></li>
+                <li><a href="http://www.soundcloud.com/robbiecooper">Soundcloud</a></li>    <br>
+                <li><a href="http://www.heliosthefirst.co.vu/">Gaming Site</a></li>
+                <li><a href="http://www.fledocraft.co.vu">Elden</a></li>
+                <li><a href="http://www.evan13698.co.vu">Evan</a></li>    <br>
+                <li><a href="http://docs.emmet.io">Emmet Docs</a></li>
+                <li><a href="http://brackets.io">Brackets []</a></li>
+                <li><a href="http://bohemiancoding.com/sketch/">Sketch 3</a></li>    <br>
+            </ul>
+
+            <div class="line"></div>
+
+            <br>
+
+            <h2 style="text-align: left;">Other Pages on This Site</h2>
+
+            <ul id="buttons">
+                <li><a href="Notes.html" target="_blank">Notes</a></li>
+                <li><a href="UpdateLog.html" target="_blank">Updates</a></li>
+            </ul>
+
+        </div>
 
     </body>
 </html>
