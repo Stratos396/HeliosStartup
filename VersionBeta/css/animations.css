@@ -1,0 +1,11 @@
+/* #nav ul ul {
+    -webkit-transition: height 1s ease-in;
+} */
+
+#nav ul ul li {
+    -webkit-transition: background-color 0.2s ease;
+}
+
+#nav ul li {
+    -webkit-transition: background-color 0.2s ease;
+}

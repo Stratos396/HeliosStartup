@@ -14,29 +14,36 @@ use '<li><a href="URL" target="_blank"></a></li>' under important links to creat
     <head>
         <!-- Always import this very same head and body up to content, it's all you ever need.-->
         <link rel="icon" type="image/png" href="img/favicon.png">
-        <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet-navbar.css">
-        <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet-main.css">
+        <link rel="stylesheet" type="text/css" href="css/stylesheet-navbar.css">
+        <link rel="stylesheet" type="text/css" href="css/stylesheet-main.css">
+        <link rel="stylesheet" type="text/css" href="css/animations.css">
         <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
         <title>Robert's Homepage</title>
     </head>
 
-    <!--The main content of the page!-->
+
+
+    <!--The page!-->
     <body>
 
-
-
             <!-- Buttons for navigating to different pages -->
-            <ul id="nav">
-                <li><a class="home" href="Home.html" style="text-decoration:none;"><h3>Home</h3></a></li>
-                <li><a class="travel-blog" href="TravelBlog.html" style="text-decoration:none;"><h3>Travels</h3></a></li>
-                <li><a class="testing" href="Testing.html" style="text-decoration:none;"><h3 >Code</h3></a></li>
-                <li><a class="person-blog" href="PersonalBlog.html" style="text-decoration:none;"><h3>Blog</h3></a></li>
-                <li><a href="#" id="more" style="text-decoration: none;"><h3>More</h3></a></li>
-            </ul>
-
-
+            <div id="nav" style="margin-top: 0; text-align: left;">
+                <ul>
+                <li><a class="home" href="Home.html"><h3>Home</h3></a></li>
+                <li><a class="travel-blog" href="TravelBlog.html"><h3>Travels</h3></a></li>
+                <li><a class="person-blog" href="PersonalBlog.html"><h3>Blog</h3></a></li>
+                <li><a id="more" href="#"><h3>More</h3></a>
+                    <ul>
+                        <div class="animateddropdown">
+                        <li><a href="Notes.html" class="notes"><h3>Notes</h3></a></li>
+                        <li><a href="UpdateLog.html" class="updates"><h3>Updates</h3></a></li>
+                        <li><a href="Testing.html" class="tests"><h3>Code</h3></a></li>
+                        </div>
+                    </ul>
+                </li>
+            </ul><!-- nav end -->
         </div>
-        </div>
+
 
 
   <!-- IDEK why I even keep this here. Like, seriously, I'll never use it. :/ -->
@@ -77,14 +84,7 @@ use '<li><a href="URL" target="_blank"></a></li>' under important links to creat
 
             <br>
 
-            <h2 style="text-align: left;">Other Pages on This Site</h2>
-
-            <ul id="buttons">
-                <li><a href="Notes.html" target="_blank">Notes</a></li>
-                <li><a href="UpdateLog.html" target="_blank">Updates</a></li>
-            </ul>
-
-        </div>
+        </div><!-- End Content -->
 
     </body>
 </html>

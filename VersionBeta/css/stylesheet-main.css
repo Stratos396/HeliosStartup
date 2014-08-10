@@ -6,8 +6,10 @@
         /*  */
         /* Defines the way the background looks */
         body {
+            font-family: 'Josefin Sans', sans-serif;
             margin: 0px; /* tells everything on the page to not bother with having space between it and the sides */
             background: linear-gradient(#c0e9ff, #38f1ff); /* Puts in a gradient background */
+            text-decoration: none;
         }
 
 
