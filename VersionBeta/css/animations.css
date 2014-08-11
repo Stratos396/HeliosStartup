@@ -1,11 +1,19 @@
-/* #nav ul ul {
-    -webkit-transition: height 1s ease-in;
-} */
-
+#nav ul ul {
+    -webkit-transition: height 0.1s ease-in;
+    -moz-transition: height 0.1s ease-in;
+    -o-transition: height 0.1s ease-in;
+    transition: height 0.1s ease-in;
+}
 #nav ul ul li {
     -webkit-transition: background-color 0.2s ease;
+    -moz-transition: background-color 0.2s ease;
+    -o-transition: background-color 0.2s ease;
+    transition: background-color 0.2s ease;
 }
 
 #nav ul li {
     -webkit-transition: background-color 0.2s ease;
+    -moz-transition: background-color 0.2s ease;
+    -o-transition: background-color 0.2s ease;
+    transition: background-color 0.2s ease;
 }

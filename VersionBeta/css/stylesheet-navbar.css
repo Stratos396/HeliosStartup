@@ -46,25 +46,19 @@
 }
 
 #nav ul ul {
+    opacity: 0;
     height: 0;
-    top: 0;
-    display: none;
+    width: 0;
+    top: -9999px;
+    left: -9999px;
     position: absolute;
     background-color: #f0fbff;
-    transition: height,opacity 0.1s ease-in;
+    font-size: 0;
 }
 
-#nav ul ul .animateddropdown {
-    display: none;
-}
-
-#nav ul ul .animateddropdown {
-    display: block;
-}
-
-#nav ul li:hover > ul { /* when you hover over a list item that has a list beneath it, then set that list to... */
-    display: block;  
+#nav ul li:hover > ul { /* when you hover over an unorganised list item that has a list beneath it, then set that list to... */
     top: 0;
+    left: 540px;
     text-decoration: none;
     height: 200px;
     width: 166px;
@@ -72,7 +66,7 @@
     margin-left: 0;
     text-align: left;
     background-color: #edfcff;
-
+    opacity: 1;
 }
 
 #nav ul ul li a {
