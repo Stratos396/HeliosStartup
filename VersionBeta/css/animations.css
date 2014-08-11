@@ -1,3 +1,7 @@
+#nav ul li:hover ul div li {
+    transition: opacity 0.3s;
+}
+
 #nav ul ul {
     -webkit-transition: height 0.1s ease-in;
     -moz-transition: height 0.1s ease-in;

@@ -3,8 +3,8 @@
 
 
 #nav {
-    border-bottom: #e0e0e0 1px solid;
-    padding: 0;
+    border-bottom: #e0e0e0 1px solid; /* gives the navbar a border on it's... BOTTOM (in-joke) */
+    padding: 0; /* makes the header display at the top */
     top: 0px; /* makes the header as an element display at the top */
     background-color: #fff; /* makes the header colour become white */
     width: 100%; /* makes the header span the entire width of the page */
@@ -16,57 +16,54 @@
 }
 
 #nav li:hover {
-    background-color: #edfcff
+    background-color: #edfcff /* when hovering over something it goes blue */
 }
 #nav ul {
-    padding: 0px;
-    top: 0;
-    margin: 0;
+    padding: 0px; /* makes the lists not push each other around */
+    top: 0; /* makes the list display at the top */
+    margin: 0; /* makes the lists not care about  */
 }
 
 #nav li {
     display: inline-block; /* displays the text in a horisontal line of blocks */
-    padding: 0px;
-    margin-top: -1px;
+    padding: 0px; /* makes the list items display at the very left */
+    margin-top: -1px; /* this is important but I don't actually know why I thought to put it here */
 }
 
 #nav li a {
-    top: 0;
-    margin-top: 0;
+    top: 0; /* makes the links display at the top */
+    margin-top: 0; /* wait wait wait... haven't I already set this in the parent element? */
     text-decoration: none; /* removes things like the automatic underline that being a hyperlink gives it */
-    padding-left: 21px;
+    padding-left: 21px; /* makes the links have ___ amount of padding to ___ direction */
     padding-top: 28px;
     padding-right: 46px;
     padding-bottom: 22px;
-    line-height: 60px;
+    line-height: 60px; /* makes the text display slightly above halfway up */
 }
 
 #nav li a #more {
-    padding-right: 50px;
+    padding-right: 50px; /* gives more it's own padding to make it look nice :3 */
 }
 
 #nav ul ul {
-    opacity: 0;
-    height: 0;
-    width: 0;
-    top: -9999px;
+    top: -9999px; /* makes sure that no matter how much you stretch your browser out you can't see the dropdown links */
     left: -9999px;
-    position: absolute;
-    background-color: #f0fbff;
-    font-size: 0;
+    position: absolute; /* The links don't move no matter how hard you try... kinda like James. */
+    background-color: #f0fbff; /* the background colour of the menu is the same as that of the hover colour of the links */
+    font-size: 0px; /* Even if you could expand your browser enough, you couldn't see the text. MWHAHAHAHAHA */
 }
 
 #nav ul li:hover > ul { /* when you hover over an unorganised list item that has a list beneath it, then set that list to... */
-    top: 0;
-    left: 540px;
-    text-decoration: none;
-    height: 200px;
-    width: 166px;
-    margin-top: 65px;
-    margin-left: 0;
-    text-align: left;
-    background-color: #edfcff;
-    opacity: 1;
+    top: 0; /* make the list display at the top of the page with the margin*/
+    left: 540px; /* displays 540px from the left */
+    text-decoration: none; /* no fancy underlines or colours. */
+    height: 207px; /* 207 pixels tall */
+    width: 166px; /* 166 pixels tall */
+    margin-top: 65px; /* displays just under nav */
+    margin-left: 0; /* doesn't care about the left wall. It broke the walls heart. D; */
+    text-align: left; /* the text is aligned to the left */
+    background-color: #edfcff; /* when hovering over the text, the background is set slightly darker */
+    opacity: 1; /* displays opaque */
 }
 
 #nav ul ul li a {
@@ -90,3 +87,11 @@
     padding-right: 18px;
 }
 
+#nav ul li ul div li {
+    opacity: 0;
+    
+}
+
+#nav ul li:hover ul div li {
+    opacity: 1;
+}

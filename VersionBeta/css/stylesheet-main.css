@@ -8,7 +8,10 @@
         body {
             font-family: 'Josefin Sans', sans-serif;
             margin: 0px; /* tells everything on the page to not bother with having space between it and the sides */
-            background: linear-gradient(#c0e9ff, #38f1ff); /* Puts in a gradient background */
+            background: -webkit-linear-gradient(#c0e9ff, #38f1ff); /* Puts in a gradient background */
+            background: -moz-linear-gradient(#c0e9ff, #38f1ff); 
+            background: -o-linear-gradient(#c0e9ff, #38f1ff); 
+            background: linear-gradient(#c0e9ff, #38f1ff); 
             text-decoration: none;
         }
 
@@ -140,10 +143,10 @@
         }
 
         /* If you want to make a line, this is the thing that says how it looks. BTW, its <div id="line"></div> */
-        #line { border-bottom: #d4d4d4 1px solid; margin: 0; }
+        .line { border-bottom: #d4d4d4 1px solid; margin: 0; }
 
         /* Optional Twitter timeline, I haven't used it yet. */
-        .twitter-timeline {
+        #twitter-timeline {
             display: none;
             float: right;
             margin-top: 87px;
