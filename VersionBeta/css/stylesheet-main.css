@@ -30,6 +30,18 @@
         }
 
 
+        #contentpanels {
+            border-radius: 3px;
+            background: #fff;
+            margin-top: 80px;
+            width: 200px;
+            height: 100px;
+            background: -webkit-linear-gradient(#c0e9ff, #38f1ff); /* Puts in a gradient background */
+            background: -moz-linear-gradient(#c0e9ff, #38f1ff); 
+            background: -o-linear-gradient(#c0e9ff, #38f1ff); 
+            background: linear-gradient(#c0e9ff, #38f1ff); 
+        }
+
         /* for some reason, #content's margin has effects on #navigation-pane, I need to fix that ._. */
         #content {
             background: #fff; /* tells content to have a white background */
@@ -80,32 +92,6 @@
 
 
 
-
-        /* Places the link to twitter */
-        .linktotwitter {
-            background-position: top right; /* makes the image a background image and puts it in the top right */
-            float: right;
-            padding: 5px;
-        }
-
-
-        /* Places the link to Youtube */
-        .linktoyoutube  {
-            background-image: url('/VersionBeta/img/youtubelink.png') right top no-repeat;
-            float: right;
-            padding: 5px;
-        }
-
-
-        /* Places the link to instagram */
-        .linktoinstagram {
-            display: none; /* not used at the moment but you can enable it if you want by using "display: inline;" */
-            background-position: top right; /* makes the image a background image and puts it in the top right */
-            float: right;
-            padding: 5px;
-        }
-
-
         /* defines the way that the links above behave as a group */
         #buttonsatthetoprighthandcornerofthescreen a:hover {
             /* box-shadow: 0 0 10px #ababab; */
@@ -139,7 +125,7 @@
         /* Says the way the links behave when hovered over */
         #buttons a:hover {
             background-color: #65cbe0;
-            box-shadow: 0 0 -3 #747474
+            box-shadow: 0 0 -3 #747474;
         }
 
         /* If you want to make a line, this is the thing that says how it looks. BTW, its <div id="line"></div> */

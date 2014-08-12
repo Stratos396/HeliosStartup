@@ -1,4 +1,7 @@
 #nav ul li:hover ul div li {
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+    -o-transition: opacity 0.3s;
     transition: opacity 0.3s;
 }
 
@@ -8,16 +11,17 @@
     -o-transition: height 0.1s ease-in;
     transition: height 0.1s ease-in;
 }
-#nav ul ul li {
-    -webkit-transition: background-color 0.2s ease;
-    -moz-transition: background-color 0.2s ease;
-    -o-transition: background-color 0.2s ease;
-    transition: background-color 0.2s ease;
-}
 
 #nav ul li {
     -webkit-transition: background-color 0.2s ease;
     -moz-transition: background-color 0.2s ease;
     -o-transition: background-color 0.2s ease;
     transition: background-color 0.2s ease;
+}
+
+#buttons a:hover {
+    -webkit-transition: background-color 0.1s;
+    -moz-transition: background-color 0.1s;
+    -o-transition: background-color 0.1s;
+    transition: background-color 0.1s;
 }
